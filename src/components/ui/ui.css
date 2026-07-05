@@ -285,3 +285,61 @@
     border-top: 1px solid var(--border);
     flex-wrap: wrap;
 }
+
+/* =========================================================
+   Botão só de ícone
+   ========================================================= */
+.icon-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 17px;
+  transition: 0.2s ease;
+}
+
+.icon-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.icon-btn--secondary {
+  background: #ececec;
+  color: var(--text);
+}
+
+.icon-btn--secondary:hover:not(:disabled) {
+  background: #dcdcdc;
+}
+
+.icon-btn--accent {
+  background: var(--accent);
+  color: #fff;
+}
+
+.icon-btn--accent:hover:not(:disabled) {
+  filter: brightness(0.95);
+}
+
+.icon-btn--danger {
+  background: var(--danger);
+  color: #fff;
+}
+
+.icon-btn--danger:hover:not(:disabled) {
+  background: var(--danger-dark);
+}
+
+.icon-btn--ghost {
+  background: var(--surface-2);
+  color: var(--muted);
+}
+
+.icon-btn--ghost:hover:not(:disabled) {
+  background: #e8e8e8;
+  color: var(--text);
+}
