@@ -1,0 +1,82 @@
+[
+    {
+        "id": 1,
+        "nome": "Cimento CP II",
+        "categoria": "Cimento",
+        "quantidade": 120,
+        "unidade": "saco",
+        "preco": 42.9,
+        "descricao": "Saco de 50kg",
+        "dataInsercao": "2026-06-10"
+    },
+    {
+        "id": 2,
+        "nome": "Areia média",
+        "categoria": "Agregados",
+        "quantidade": 35,
+        "unidade": "m³",
+        "preco": 89.0,
+        "descricao": "Areia lavada para concreto",
+        "dataInsercao": "2026-06-11"
+    },
+    {
+        "id": 3,
+        "nome": "Tijolo baiano 8 furos",
+        "categoria": "Alvenaria",
+        "quantidade": 4200,
+        "unidade": "unidade",
+        "preco": 1.15,
+        "descricao": "9x19x24 cm",
+        "dataInsercao": "2026-06-12"
+    },
+    {
+        "id": 4,
+        "nome": "Vergalhão CA-50 10mm",
+        "categoria": "Ferro",
+        "quantidade": 12,
+        "unidade": "barra",
+        "preco": 38.5,
+        "descricao": "Barra de 12m",
+        "dataInsercao": "2026-06-13"
+    },
+    {
+        "id": 5,
+        "nome": "Tinta acrílica branca",
+        "categoria": "Pintura",
+        "quantidade": 8,
+        "unidade": "lata",
+        "preco": 219.9,
+        "descricao": "Lata de 18L, fosco",
+        "dataInsercao": "2026-06-14"
+    },
+    {
+        "id": 6,
+        "nome": "Argamassa AC-III",
+        "categoria": "Argamassa",
+        "quantidade": 60,
+        "unidade": "saco",
+        "preco": 34.9,
+        "descricao": "Saco de 20kg, uso externo",
+        "dataInsercao": "2026-06-15"
+    },
+    {
+        "id": 7,
+        "nome": "Cano PVC 100mm",
+        "categoria": "Hidráulica",
+        "quantidade": 15,
+        "unidade": "barra",
+        "preco": 62.0,
+        "descricao": "Barra de 6m, esgoto",
+        "dataInsercao": "2026-06-16"
+    },
+    {
+        "id": 8,
+        "nome": "Telha fibrocimento 6mm",
+        "categoria": "Cobertura",
+        "quantidade": 90,
+        "unidade": "unidade",
+        "preco": 48.75,
+        "descricao": "2,44 x 1,10 m",
+        "dataInsercao": "2026-06-17"
+    }
+]
