@@ -9,7 +9,6 @@ const navItems = [
 export default function Header() {
     const { pathname } = useLocation();
 
-    // Usa a URL atual (useLocation) para marcar o link da seção ativa
     const isActive = (to: string) =>
         to === "/" ? pathname === "/" : pathname.startsWith("/produtos");
 
