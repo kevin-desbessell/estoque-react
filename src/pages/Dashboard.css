@@ -1,0 +1,189 @@
+/* =========================================================
+   Hero do painel
+   ========================================================= */
+.dash-hero {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 24px;
+    flex-wrap: wrap;
+    background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+    color: #fff;
+}
+
+.eyebrow {
+    margin: 0 0 8px;
+    font-size: 13px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    opacity: 0.85;
+}
+
+.dash-hero h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+.dash-hero__texto {
+    margin: 12px 0 0;
+    max-width: 520px;
+    line-height: 1.6;
+    opacity: 0.95;
+}
+
+.dash-hero__acoes {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+/* =========================================================
+   Cartões de estatística
+   ========================================================= */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr));
+    gap: 18px;
+}
+
+.stat-card {
+    background: var(--surface);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.stat-card__icone {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 22px;
+    flex-shrink: 0;
+}
+
+.stat-card > div {
+  min-width: 0;
+}
+
+.stat-card__valor {
+  margin: 0;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.1;
+  word-break: break-word;
+}
+
+.stat-card__rotulo {
+    margin: 4px 0 0;
+    color: var(--muted);
+    font-size: 14px;
+}
+
+/* =========================================================
+   Cabeçalho de seção (reutilizável nas páginas)
+   ========================================================= */
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-bottom: 18px;
+}
+
+.section-header h2 {
+    margin: 0 0 6px;
+    font-size: 22px;
+}
+
+.section-subtitle {
+    margin: 0;
+    color: var(--muted);
+    line-height: 1.5;
+}
+
+/* =========================================================
+   Lista de estoque baixo
+   ========================================================= */
+.baixo-lista {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 10px;
+}
+
+.baixo-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 14px 16px;
+    border: 1px solid var(--border);
+    border-left: 4px solid var(--danger);
+    border-radius: 12px;
+    background: var(--surface-2);
+    cursor: pointer;
+    transition: 0.15s ease;
+}
+
+.baixo-item:hover {
+    background: #fff;
+    box-shadow: var(--shadow);
+    transform: translateX(2px);
+}
+
+.baixo-item__info {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.baixo-item__nome {
+    font-weight: 600;
+}
+
+.baixo-item__cat {
+    font-size: 13px;
+    color: var(--muted);
+}
+
+.baixo-item__qtd {
+    font-weight: 700;
+    color: var(--danger);
+    white-space: nowrap;
+}
+
+/* =========================================================
+   Responsividade
+   ========================================================= */
+@media (max-width: 640px) {
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .stat-card__valor {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 560px) {
+  .dash-hero h1 {
+    font-size: 26px;
+  }
+
+  .dash-hero__acoes {
+    width: 100%;
+  }
+
+  .dash-hero__acoes .btn {
+    flex: 1;
+  }
+}
